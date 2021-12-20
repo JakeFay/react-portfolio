@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from 'react';
 //import Modal from '../Modal';
 
 const ProjectList = () => {
@@ -6,7 +6,7 @@ const ProjectList = () => {
     const projects = [
         {
             name: 'Run Buddy',
-            liveUrl: 'https://jakefay.github.io/run-buddy/', 
+            liveUrl: 'https://jakefay.github.io/run-buddy/',
             description: 'A',
             img: 'https://github.com/JakeFay/run-buddy/blob/main/assets/images/run-buddy-screenshot.png?raw=true',
             repo: 'https://github.com/JakeFay/run-buddy'
@@ -52,17 +52,16 @@ const ProjectList = () => {
 
     return (
         <div>
-            <div className="flex-row">
+            <div className="row row-cols-3">
                 {projects.map((project, i) => (
-                    <div>
-                        <h1>{project.name}</h1>
-                        <h3>{project.description}</h3>
-                        <img className="img-thumbnail mx-1">{project.img}</img>
+                    <div key={i}>
+                        <h1 >{project.name}</h1>
+                        <h3 >{project.description}</h3>
+                        <img src={project.img} alt={project.name} className="img-thumbnail mx-1"></img>
                         <a href={project.liveUrl}>Deployed link</a>
                         <a href={project.repo}>Repository link</a>
-                        
                     </div>
-                    
+
 
                 ))}
             </div>
