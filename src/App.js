@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import ProjectList from "./components/Portfolio";
 import Nav from "./components/Nav";
 import ContactForm from "./components/Contact";
+import About from "./components/About";
+import Resume from "./components/Resume";
 
 function App() {
 
@@ -14,7 +16,7 @@ function App() {
         setCurrentPage={setCurrentPage}
         currentPage={currentPage} />
       
-      {currentPage === 'about' ? <h1>this is the about component</h1> : currentPage === "contact" ? <ContactForm /> : currentPage === 'portfolio' ? <ProjectList /> : currentPage === 'resume' ? <h1>this is the resume component</h1>:<h1>this is the home page component</h1>}
+      {currentPage === 'about' ? <h1><About /></h1> : currentPage === "contact" ? <ContactForm /> : currentPage === 'portfolio' ? <ProjectList /> : currentPage === 'resume' ? <h1><Resume /></h1>:<h1><About /></h1>}
 
     </>
   );

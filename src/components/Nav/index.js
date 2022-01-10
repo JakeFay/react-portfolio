@@ -16,32 +16,34 @@ function Nav(props) {
         <header className="flex-row px-1">
             <h2>
                 <a href="/">
-                    Jake Fay
+                    Jacob Fay
                 </a>
             </h2>
-            <nav>
-                <ul className="flex-row">
-                    <li className="mx-2">
-                    <span onClick={()=>{
-                        setCurrentPage('about')
-                    }}>About</span>
-                    </li>
-                    <li className="mx-2">
-                        <span onClick={()=>{
-                        setCurrentPage('contact')
-                    }}>Contact</span>
-                    </li>
-                    <li className="mx-2">
-                    <span onClick={()=>{
-                        setCurrentPage('portfolio')
-                    }}>Portfolio</span>
-                    </li>
-                    <li className="mx-2">
-                    <span onClick={()=>{
-                        setCurrentPage('resume')
-                    }}>Resume</span>
-                    </li>
-                </ul>
+
+            <nav className="navbar navbar-default">
+             
+                    <ul className=" navbar navbar-default ">
+                        <li className="mx-2">
+                            <span onClick={() => {
+                                setCurrentPage('about')
+                            }}>About</span>
+                        </li>
+                        <li className="mx-2">
+                            <span onClick={() => {
+                                setCurrentPage('contact')
+                            }}>Contact</span>
+                        </li>
+                        <li className="mx-2">
+                            <span onClick={() => {
+                                setCurrentPage('portfolio')
+                            }}>Portfolio</span>
+                        </li>
+                        <li className="mx-2">
+                            <span onClick={() => {
+                                setCurrentPage('resume')
+                            }}>Resume</span>
+                        </li>
+                    </ul>
             </nav>
         </header>
     );

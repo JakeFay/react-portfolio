@@ -58,8 +58,8 @@ const ProjectList = () => {
                         <h1 >{project.name}</h1>
                         <h3 >{project.description}</h3>
                         <img src={project.img} alt={project.name} className="img-thumbnail mx-1"></img>
-                        <a href={project.liveUrl}>Deployed link</a>
-                        <a href={project.repo}>Repository link</a>
+                        <a href={project.liveUrl} >Click for deployed application!</a>
+                        <a href={project.repo} >Click for repository link!</a>
                     </div>
 
 
